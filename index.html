@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="divs.css">
+    <title>Infinity Plus One - math is awesome</title>
+    <link rel="icon" href="/images/site-logo.png" type="image/icon">
+</head>
+<body>
+    <div id="top"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
+    <div id="left"></div>
+    <div>
+        <ul id="menu">
+            <li id="menu-li"><a href="" id="a-menu">Subscribe</a></li>
+            <li id="menu-li"><a href="" id="a-menu">Contact</a></li>
+            <li id="menu-li"><a href="" id="a-menu">About</a></li>
+            <li id="menu-li"><a href="" id="a-menu">Topical Archive</a></li>
+            <li id="menu-li"><a href="" id="a-menu">Home</a></li>
+        </ul>
+    </div>
+    <div id="head-banner">
+        <a href="index.html"><img src="/images/head-banner.jpg" alt="head-banner" id="banner"></a>
+    </div>
+        <section>
+            <div class="row content">
+                <div class="col1">
+                    <div class="hcol">
+                        <h1>Fractal dimensions</h1>
+                    </div>
+                    <div class="scol">
+                        <div class="scol11">
+                            <img src="/images/profile.png" alt="profile">
+                            <a href="index.html" id="a-menu">Dr. Dilts</a>
+                            <a href="index.html">Sat, 15 Sep 2018 </a>
+                            <a href="index.html" id="a-menu">3 Comments </a>
+                        </div>
+                        <div class="scol12">
+                            <p>For most shapes, the dimension is pretty clear. A line is one dimensional — it has only length, no thickness or depth. A square is two dimensional — it takes up area, but not volume. A cube is three dimensional — a real one could be sitting on your desk.</p>
+                            <p>But what about fractals?</p>
+                            <img src="/images/Kochsim.gif" alt="Kochsim" class="center-img">
+                            <p>The boundary of the Koch snowflake (partly shown above) should probably not be two dimensional since it’s just a line that’s been crinkled infinitely many times. But it also probably shouldn’t be considered one dimensional either — it’s been crinkled so many times, it’s infinite length and almost takes up area.</p>
+                            <p>So, how many dimensions does it have?</p>
+                            <img src="/images/1.png" alt="1" class="center-img">
+                            <p>Close, but you’ll spoil it!</p>
+                            <p>First, let’s talk about dimension.</p>
+                            <p>There are many ways to define dimension, from topological dimension to the Hausdorff dimension. Different definitions are useful for different fields of mathematics, but they all agree for simple shapes.</p>
+                            <p>The simplest definition of dimension is the one we used when we were talking about manifolds back in Asteroids on a Donut. Basically, a line is one dimensional because you can only go in one (pair of) directions — left and right. A square is two dimensional because you can go left and right and up and down. And so on.</p>
+                            <p>Unfortunately, that stops working so well when you start dealing with fractals. After all, which directions can you go on the Cantor set?</p>
+                            <img src="/images/all.png" alt="all" class="center-img">
+                            <p>The Cantor is set is just a bunch of disconnected points. There isn’t a direction to go when you’re on them. But there’s a whole bunch of points (uncountably1 many, in fact), so maybe it doesn’t make sense to say it’s zero dimensional.</p>
+                            <p>To make sense of things like the Cantor set and the Koch snowflake, we need a definition of dimension that’s a bit more robust.</p>
+                            <img src="/images/robust.png" alt="robust" class="center-img">
+                            <p>To figure out how to define dimension, let’s look how size grows when we double lengths.</p>
+                            <p>For a line, if we double the lengths, the line doubles in length.</p>
+                            <img src="/images/whoa.png" alt="whoa" class="center-img">
+                            <p>In other words, doubling the lengths makes the line 2 = 2^1 times as big.</p>
+                            <img src="/images/double_line.png" alt="double_line" class="center-img">
+                            <p>For a square, if we double the lengths, the square quadruples in area. That’s because there are two directions for doubling to affect, so doubling the lengths makes the square [add IMAGE over HERE] times as big.</p>
+                            <img src="/images/double_square.png" alt="double_square" class="center-img">
+                            <p>For a cube, if we double the lengths, the cube octuples in volume. For a cube, there are three directions for doubling to affect, so doubling the lengths makes the cube [add IMAGE over HERE] times as big.</p>
+                            <img src="/images/double_cube.png" alt="double_cube" class="center-img">
+                            <p>See where I’m going?</p>
+                            <img src="/images/aaaaalmost.png" alt="aaaaalmost" class="center-img">
+                            <p>One way to figure out a dimension is to make it bigger by multiplying each direction by two. Just like multiplying the lengths of a cube by 2 increased its size by a factor of 2^3, if we multiply the lengths of a d dimensional shape by 2, then the size of the shape will have to expand by a factor of 2^d.</p>
+                            <p>Multiplying by 2 isn’t special, of course. If we multiplied each length by a factor of 3, the size of a shape of dimension d would have to expand by a factor of 3^d.</p>
+                            <p>Now, let’s take this new measuring stick and try to measure some fractals!</p>
+                            <p>Even Benoit Mandelbrot, often considered the father of fractals, had trouble nailing down an exact definition for what a fractal is. But a good intuitive idea is that a fractal is a shape that looks roughly the same, no matter how much you zoom in.</p>
+                            <p>For example, if you zoom in on a circle, it quickly stops looking round, and begins to look straight.</p>
+                            <img src="/images/circlezoom.gif" alt="circlezoom" class="center-img">
+                            <p>But, for a fractal, no matter how far you zoom in, it keeps on repeating itself.</p>
+                            <img src="/images/Kochsim.gif" alt="Kochsim" class="center-img">
+                            <p>While “most” fractals aren’t exactly self similar (for instance, the Mandelbrot set), many of the simplest examples are. To make one, start from a simple shape, then repeatedly change it in the same way, on smaller and smaller scales, infinitely many times.</p>
+                            <p>For instance, the Koch snowflake.</p>
+                            <img src="/images/Von_Koch_curve.gif" alt="Von_Koch_curve" class="center-img">
+                            <p>To make the snowflake, start with a triangle, then, add a spike to each side. Then, for each of the new, smaller sides, add a new spike. The Koch snowflake is not any of the intermediate steps, but the limit of doing infinitely many steps.</p>
+                            <img src="/images/kochstep.png" alt="kochstep" class="center-img">
+                            <p>So, what’s the dimension of the snowflake?</p>
+                            <p>Remember, what we’re looking for is a scaling law — if we multiply each length by a factor of 3, the size of a shape of dimension d would have to expand by a factor of 3^d.</p>
+                            <p>How does the snowflake scale?</p>
+                            <p>Consider one side at a time. Each side becomes four sides, of one third the length.</p>
+                            <img src="/images/kochstep1.png" alt="kochstep1" class="center-img">
+                            <p>If you take one of these little mini-sides, and triple the lengths in each direction, then each one of these mini-sides will become as big as the entire original side. For instance, the little spike on the left flat part expands to be the same size as the big spike in the middle of the original.</p>
+                            <img src="/images/blowup.png" alt="blowup" class="center-img">
+                            <p>Since the original side was four copies of the mini-side, that means that if we triple the length in each direction, then we quadrupled the total size of the shape.</p>
+                            <p>Using the pattern that a d dimensional shape should get 3^d times bigger, we have that 4 = 3^d. Using a logarithm, we get that the dimension of the Koch snowflake is d = \log(4)/\log(3) \approx 1.2619. More than a length, a bit less than an area.</p>
+                            <img src="/images/alien.png" alt="alien" class="center-img">
+                            <p>Let’s do another example of a fractal, this one somewhere between a point and a line — the Cantor set.</p>
+                            <p>To make the Cantor set, you start with a line. Then you cut out the middle third. Then, from each remaining piece, you cut out it’s middle third, and so on, until you’re left with a fine dust.</p>
+                            <img src="/images/all.png" alt="all" class="center-img">
+                            <p>To figure out the dimension of the Cantor set, look at the left segment after the first excision. Since we are just cutting out middle thirds, this little segment becomes an exact copy of the entire Cantor set, just at a smaller scale.</p>
+                            <p>If we triple the lengths, then that small segment becomes the original Cantor set. But the original Cantor set is just two copies of that smaller piece. Thus, tripling lengths doubles size, so 2 = 3^d, and d = \log(2)/\log(3) \approx 0.6309. Not really a line, not really a point.</p>
+                            <p>With any of these self similar fractals, you can do a similar trick, without too much problem. For instance, the Serpinski Carpet, which is made by taking a square and repeatedly cutting out the middle ninth, increases in size by a factor of 8 whenever the lengths are multiplied by 3, and so has a dimension of 8 = 3^d, so d = \log(8)/\log(3) \approx 1.8928.</p>
+                            <img src="/images/Sierpinski_carpet_6.png" alt="Sierpinski_carpet_6" class="center-img">
+                            <p>Many of the most awesome fractals aren’t exactly self similar, like the Mandelbrot set.</p>
+                            <img src="/images/Mandel_zoom_00_mandelbrot_set.jpg" alt="Mandel_zoom_00_mandelbrot_set" class="center-img">
+                            <p>The Mandelbrot set is defined by looking at each complex number c individually, then repeatedly calculating z_i^2 + c. (For example, if c = 1 + i, then we make a sequence z_0 = 1+i, z_1 = (1+i)^2 + 1+i = 1+3i, z_2 = (1+3i)^2 + 1+i = -7+7i, etc..) If this sequence becomes infinitely big, then the original c is not in the Mandelbrot set. If, like for c = 0 + 0i, this sequence stays close to zero, then that c is in the Mandelbrot set.</p>
+                            <img src="/images/trustyou.png" alt="trustyou" class="center-img">
+                            <p>The Mandelbrot set is famous for it’s beauty, and for the nearly repeating, but infinitely varied patterns you find when you zoom in.</p>
+                            <img src="/images/Mandelbrot_sequence_new.gif" alt="Mandelbrot_sequence_new" class="center-img">
+                            <p>Actually, from that definition, you might realize that only the black parts of the pictures are the Mandelbrot set. The pretty colors come from counting how long it takes for the sequence z_i to get large enough to be sure it won’t stay small.</p>
+                            <p>Well, the Mandelbrot set itself is, of course, 2-dimensional, since it has area. (It can’t be three dimensional since it’s already confined to a plane.) But what about its boundary?</p>
+                            <img src="/images/Boundary_mandelbrot_set.png" alt="Boundary_mandelbrot_set" class="center-img">
+                            <p>It’s a really zig-zagging line, like the Koch snowflake, but it’s not exactly self-repeating, so we can’t do the same tricks we did before. Just from the previous examples, you probably expect the dimension to be somewhere between 1 and 2, which seems reasonable.</p>
+                            <p>Mandelbrot himself conjectured that the boundary was so zig-zaggy, so fractal, that it would somehow skip pass crazy dimensions like \log(4)/\log(3), and go all the way to two dimensions.</p>
+                            <p>This turns out to be true. Shishikura managed to prove in 1998 that the boundary of the Mandelbrot set is two-dimensional. The proof is a biiiit complicated, so we won’t go into it here, but it does work.</p>
+                            <p>Normally, the boundary is one dimension lower than the main part of a shape. For instance, a square is two dimensional, but its boundary is one dimensional. Fractals can be a bit different. For instance, we had the Koch snowflake. The inside is two dimensional, but the boundary, as we said earlier, is \log(4)/\log(3) dimensional. Still less than two.</p>
+                            <p>The Mandelbrot set itself is also two-dimensional. But, somehow, the boundary is so jagged that it manages to have the same dimension as the set itself.</p>
+                            <p>That’s… bizarre.</p>
+                            <p>But that’s how fractals roll.</p><hr>
+                            <img src="/images/roll.png" alt="roll" class="center-img">
+                            <p>Sorry for taking so long on this post. I wrote an entire other post about waves, which took forever… but then I decided it wasn’t very good. Hopefully I’ll get a better angle on that topic eventually.</p><hr>
+                            <p><– Previous Post: The most controversial axiom of all time<br>
+                                –> Next Post:
+                            </p>
+                            <hr>
+                            <ol>
+                                <li>Uncountable means infinite, but like super duper infinite. Countably infinite means you can line them up with the counting numbers 1, 2, 3… Uncountable is somehow a bigger kind of infinity. Way more than infinity plus one. Ahem. Anyway, if you’re curious how you can be bigger than infinity, go back to the very first post, Infinity plus one.</li>
+                                <li>A Mandelbrot set generator isn’t that hard to make yourself, if you know how to program, or there are a number of generators available for free online, such as this one.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="scol21">
+                        <hr class="hr-big"><br>
+                        <h2 class="connect-link">INFINITY PLUS ONE</h2>
+                        <p class="about">new posts every sometimes<br>
+                            because math is awesome!
+                        </p>
+                        <p class="about">You can subscribe by email by going to this<br><a href="#">link!</a></p>
+                        <p class="about">© 2017–2018. All rights reserved.</p>
+                    </div>
+                    <div class="scol22">
+                        <hr class="hr-big"><br>
+                        <h2 class="connect-link">FOLLOW US ON FACEBOOK</h2>
+                        <div id="fb-root">
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="6uybF568"></script>
+                        </div>
+                        <div class="fb-page" data-href="https://www.facebook.com/infinityplusonemath/" data-tabs="timeline" data-width="300" data-height="100" ><blockquote cite="https://www.facebook.com/infinityplusonemath/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/infinityplusonemath/">Infinity Plus One</a></blockquote></div>
+                    <div class="scol23">
+                        <hr class="hr-big"><br>
+                        <h2 class="connect-link">FOLLOW US ON TWITTER</h2>
+                        <a class="twitter-timeline" data-width="300" data-height="200" href="https://twitter.com/DrDilts?ref_src=twsrc%5Etfw">Tweets by DrDilts</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="button">
+            <div class="btn">
+                <a href="index.html"><button type="button" id="btn">OLDER POSTS</button></a>
+                
+            </div>
+        </section>
+        <section class="footer">
+            <div class="author">
+                <a href="index.html">Infinity Plus One</a> 
+                <span>/</span>
+                <a href="index.html"><img src="/images/wordpress-logo.png" alt="wordpress-logo" id="wordpress-logo"></a>
+                <a href="index.html"><i>$Yash</i></a> 
+            </div>
+            <div class="socials">
+                <ul >
+                    <li><img src="/images/twitter.png" alt="twitter" class="img-logos"></li>
+                    <li><img src="/images/facebook.png" alt="facebook" class="img-logos"></li>
+                    <li><img src="/images/google-plus.png" alt="google-plus" class="img-logos"></li>
+                    <li><img src="/images/github.png" alt="github" class="img-logos"></li>
+                    <li><img src="/images/wordpress.png" alt="wordpress" class="img-logos"></li>
+                </ul>
+            </div>
+        </section>
+</body>
+</html>
